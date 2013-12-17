@@ -1,0 +1,27 @@
+{
+  "repository": "https://github.com/spark/community.git",
+  "name": "examples/rc_car",
+  "description": "A simple rc car example",
+  "version": "0.0.1",
+  "maintainer": "Unclaimed",
+  "contributors": [
+    {
+      "name": "Mohit Bhoite",
+      "email": "mohit@spark.io"
+    },
+    {
+      "name": "Zachary Crockett",
+      "email": "zachary@spark.io"
+     },
+     {
+      "name": "Joe Goggins",
+      "email": "joe@spark.io"
+     }
+  ],
+  "dependencies": {
+    // ...not sure what this means yet
+  },
+  "devDependencies": {
+    // ...not sure what this means yet
+  }
+}
