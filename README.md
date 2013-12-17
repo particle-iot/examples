@@ -1,7 +1,7 @@
 About
 =====
 
-A repo for sharing, refining, and cultivating broadly useful examples and libaries to do cool stuff with a Spark Core.
+A repo for sharing, refining, and cultivating broadly useful Spark Core firmware examples and corresponding code used to interact with the firmware.
 
 Roadmap
 -------

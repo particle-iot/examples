@@ -35,5 +35,3 @@ Check out the [rc() function in main .sh](main.sh) for details what keys do what
 * Bill of Materials
 * Schematic Diagrams
 * Level of Complexity for the Project
-
-...

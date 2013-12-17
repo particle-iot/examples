@@ -1,9 +1,9 @@
 {
-  "repository": "https://github.com/spark/community.git",
-  "name": "examples/rc_car",
+  "name": "rc_car",
   "description": "A simple rc car example",
+  "tags": [ ],
   "version": "0.0.1",
-  "maintainer": "Unclaimed",
+  "maintainer": "spark",
   "contributors": [
     {
       "name": "Mohit Bhoite",
