@@ -1,0 +1,6 @@
+{
+  "type": "app_example",
+  "title": "A Simple RC Car example",
+  "description": "Code needed to run the RC Car documented at docs.spark.io",
+  "firmware_source_file": "main.cpp"
+}
