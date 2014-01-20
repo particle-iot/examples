@@ -1,37 +1,29 @@
 About
 =====
 
-A simple rc car kit controlled by a bash script.
+A simple rc car kit firmware and simple bash script to control it with via curl commands.
 
-Who should check this out
--------------------------
+Controller Usage
+----------------
 
-People that want to get more comfortable working with REST APIs on the command line.
+Open up a bash shell + go to controllers dir
 
-Usage
------
+    cd rc_car/controllers
 
-Open up a bash shell, for Mac users, just open up a terminal.
-For Windows users, ...
-
-First, set 2 key environment variables:
+Set 2 env vars:
 
     export SPARK_CORE_DEVICE_ID="PUT_YOUR_DEVICE_ID_HERE!!!! i.e. acefdc000a01a411587f65d5"
-    export SPARK_CORE_ACCESS_TOKEN="PUT_YOUR_DEVICE_ID_HERE!!!! i.e. 3651b73e632b86881d47c65e7b0f59d511e97520"
+    export SPARK_CORE_ACCESS_TOKEN="PUT_YOUR_ACCESS_TOKEN_HERE!!!! i.e. 3651b73e632b86881d47c65e7b0f59d511e97520"
 
-Then load some bash functions into the current shell:
+Load some bash functions into the current shell:
 
-    source main.sh
+    source application.sh
 
 Then run the input loop function:
 
     rc_while
 
-Check out the [rc() function in main .sh](main.sh) for details what keys do what.
+Requirements
+------------
 
-
-### Other things This readme might include:
-
-* Bill of Materials
-* Schematic Diagrams
-* Level of Complexity for the Project
+TODO
