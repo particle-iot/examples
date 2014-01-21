@@ -1,5 +1,3 @@
-#include "application.h"
-
 /* A Spark function to parse the commands */
 int rcCarControl(String command);
 

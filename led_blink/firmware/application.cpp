@@ -1,5 +1,3 @@
-#include "application.h"
-
 // We name pin D0 as led
 int led = D0; 
 
