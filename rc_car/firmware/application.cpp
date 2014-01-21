@@ -1,7 +1,6 @@
-/* Function prototypes -------------------------------------------------------*/
+#include "application.h"
 
-
-/* A comment */
+/* A Spark function to parse the commands */
 int rcCarControl(String command);
 
 /* Globals -------------------------------------------------------------------*/
@@ -34,10 +33,10 @@ void loop()
 /*******************************************************************************
  * Function Name  : rcCarControl
  * Description    : Parses the incoming API commands and sets the motor control
-          pins accordingly
+                    pins accordingly
  * Input          : RC Car commands
-          e.g.: rc,FORWARD
-            rc,BACK
+                    e.g.: rc,FORWARD
+                          rc,BACK
  * Output         : Motor signals
  * Return         : 1 on success and -1 on fail
  *******************************************************************************/

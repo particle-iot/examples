@@ -26,4 +26,4 @@ Then run the input loop function:
 Requirements
 ------------
 
-TODO
+Wire up your RC-Car kit as described here: http://docs.spark.io/#/shields/spark-rc-car-kit
