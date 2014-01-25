@@ -8,9 +8,9 @@ How to Use
 
 The firmware examples in this repo are used to periodically populate flashable app examples in the [Spark Web IDE](https://www.spark.io/build) that user's can browse, flash, and fork Spark Core firmware.
 
-![browse, flash, fork Spark Core firmware](http://s3.amazonaws.com/spark-website/forkable_firmware_screenshot.png)
+![browse, flash, and fork Spark Core firmware](http://s3.amazonaws.com/spark-website/forkable_firmware_screenshot.png)
 
 Roadmap
 -------
 
-Right now, only 2 the (led_blink and rc_car) are loaded in the IDE, however, soon we'll be finishing the rest of these examples and adding more from the Spark [docs site](http://docs.spark.io/#/examples) and from other [awesome projects in the community](https://community.spark.io/category/project-share). Stay tuned.
+Right now, just two of these app examples are loaded in the IDE (led_blink + rc_car). Soon, we'll be finishing the rest of these examples, adding from the Spark [docs site](http://docs.spark.io/#/examples), and from [awesome projects in the community](https://community.spark.io/category/project-share). 
