@@ -1,5 +1,5 @@
 {
   "type": "app_example",
-  "name": "Spark's RC Car Example",
+  "name": "Spark RC Car Example",
   "description": "A simple application to control your RC-Car kit via the Internet"
 }
