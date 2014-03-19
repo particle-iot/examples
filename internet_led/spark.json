@@ -1,5 +1,5 @@
 {
   "type": "app_example",
-  "name": "Relay shield",
-  "description": "a description"
+  "name": "Blink an LED through REST API",
+  "description": "A program to blink an built-in LED by calling Spark Cloud REST API"
 }
