@@ -1,5 +1,5 @@
 {
   "type": "app_example",
-  "name": "Relay shield",
-  "description": "a description"
+  "name": "Relay shield example",
+  "description": "http://docs.spark.io/#/shields/relay-shield-setting-up-the-relay-shield"
 }
