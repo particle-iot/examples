@@ -1,5 +1,5 @@
 {
   "type": "app_example",
   "name": "Blink an LED",
-  "description": "A program to blink an LED connected to pin D0"
+  "description": "A program to blink an LED connected to pin D0 or D7"
 }
