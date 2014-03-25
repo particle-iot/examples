@@ -1,0 +1,5 @@
+{
+  "type": "app_example",
+  "name": "Toggle LED with API",
+  "description": "A simple program to toggle the D7 LED."
+}
