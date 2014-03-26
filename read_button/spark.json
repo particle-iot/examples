@@ -1,0 +1,5 @@
+{
+  "type": "app_example",
+  "name": "Toggle an LED with button input",
+  "description": "A program to on/off an LED connected to pin D0 or D7 toggled by a push button"
+}
