@@ -1,16 +1,22 @@
 About
 =====
 
-A repo for sharing, refining, and cultivating broadly useful Spark Core firmware examples and corresponding code used to control or read data from a Core. These examples are designed to exemplify what you can do with a Core and make it easier to get started.
+A repo for sharing, refining, and cultivating broadly useful Spark Core firmware examples.
+
+This repo is used to populate the example application firmware in the [Spark Web IDE](https://www.spark.io/build).
+
+Our goal for this repo is to provide a place where people can contribute awesome code and content to help others learn and to illustrate best practices for documentation, software architecture, and hardware design.
 
 How to Use
 ----------
 
-The firmware examples in this repo are used to periodically populate flashable app examples in the [Spark Web IDE](https://www.spark.io/build) that user's can browse, flash, and fork Spark Core firmware.
-
 ![browse, flash, and fork Spark Core firmware](http://s3.amazonaws.com/spark-website/forkable_firmware_screenshot.png)
 
-Roadmap
--------
+How to Contribute
+-----------------
 
-Right now, just two of these app examples are loaded in the IDE (led_blink + rc_car). Soon, we'll be finishing the rest of these examples, adding from the Spark [docs site](http://docs.spark.io/#/examples), and from [awesome projects in the community](https://community.spark.io/category/project-share). 
+1. Identify a learning gap that existing examples don't cover OR see something amazing on the [community site](community.spark.io).
+1. Propose the example with GitHub issue tagged with "Proposed Example". Try to rally people to comment on what the example should do, what learning goals will it advance, etc. Feel free to write an example README to illustrate what you're thinking.
+2. Fork the repo, add a sub-directory, spark.json, README.md, and code. 
+You can use the [blink_led](/blink_led) for a solid simple example of what goes in a good example.
+3. Issue a pull request.
