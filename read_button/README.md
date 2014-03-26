@@ -39,9 +39,10 @@ void loop() {
     digitalWrite(led2, ledstatus); 
 }
 ```
-	Here's a little secret (~shhh)....If you happen to be stubborn and not release the pushbutton, the LED enters up blinking. How cool is that?! 2 in 1 function! ;)
+
+Here's a little secret (~shhh)....If you happen to be stubborn and not release the pushbutton, the LED enters up blinking. How cool is that?! 2 in 1 function! ;)
        
  In hardware:  
       
-   1. Reverse the connection with one side on the Pushbutton connected to +3.3V --> Resistor --> Ground
-   2. In this way, the readings will be 0V when the Pushbutton is left untouched and changes to +3.3v when pressed.
+   1. Reverse the connection with one side to Gound --> Pushbutton leg 1, Pushbutton leg 2 --> Resistor --> +3.3v
+   2. In this way, the readings will be HIGH when the Pushbutton is left untouched and changes to LOW when pressed.
