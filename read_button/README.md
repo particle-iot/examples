@@ -16,7 +16,7 @@ eg. Turn on/off my desk lamp when i press a button or order a pizza by hitting a
 
 **Hands-on Activity:**
 
-When you run the [firmware example](/firmware) provided, LED on D0 or D7 will light up accordingly
+When you run the [firmware example](firmware) provided, LED on D0 or D7 will light up accordingly
 
  In example code:
       
