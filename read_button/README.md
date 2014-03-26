@@ -12,7 +12,7 @@ eg. Turn on/off my desk lamp when i press a button or order a pizza by hitting a
 
 **Schematic diagram:**
 
-![Example LED](/images/ex-button.png)
+![Example LED](images/ex-button.png)
 
 **Hands-on Activity:**
 
