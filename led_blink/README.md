@@ -17,10 +17,12 @@ Schematic diagram
 
 ![Example LED](/led_blink/images/ex-led.png)
 
+Note, LEDs have polarity (i.e. they only work when the "+" and "-" are wired correctly), the illustrated bent LED wire above corresponds to the physical LED wire that is longer.
+
 How to Use
 ---
 
-There isn't much to this. 1) Flash it, 2) Watch the LED blink, 3) Try the activities below
+There isn't much to this. 1) flash it, 2) watch the LED blink, 3) fork the example, 4) try the activities below.
 
 Activities
 ---
