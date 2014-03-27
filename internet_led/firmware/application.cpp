@@ -2,28 +2,6 @@
 int led1 = D0;
 int led2 = D1;
 
-// This routine runs only once upon reset
-void setup()
-{
-   //Register our Spark function here
-   Spark.function("led", ledControl);
-
-   // Configure the pins to be outputs
-   pinMode(led1, OUTPUT);
-   pinMode(led2, OUTPUT);
-
-   // Initialize both the LEDs to be OFF
-   digitalWrite(led1, LOW);
-   digitalWrite(led2, LOW);
-}
-
-// This routine loops forever
-void loop()
-{
-   // Nothing to do here
-}
-
-
 // This function gets called whenever there is a matching API request
 // the command string format is l<led number>,<state>
 // for example: l1,HIGH or l1,LOW
@@ -46,3 +24,27 @@ int ledControl(String command)
    digitalWrite(pinNumber, state);
    return 1;
 }
+
+// This routine runs only once upon reset
+void setup()
+{
+   //Register our Spark function here
+   Spark.function("led", ledControl);
+
+   // Configure the pins to be outputs
+   pinMode(led1, OUTPUT);
+   pinMode(led2, OUTPUT);
+
+   // Initialize both the LEDs to be OFF
+   digitalWrite(led1, LOW);
+   digitalWrite(led2, LOW);
+}
+
+// This routine loops forever
+void loop()
+{
+   // Nothing to do here
+}
+
+
+

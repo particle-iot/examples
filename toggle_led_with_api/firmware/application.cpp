@@ -3,11 +3,11 @@ int state = LOW;
 
 int toggle_led(String args) {
     if (state == HIGH){
-        state = LOW;       
+        state = LOW;
     } else {
         state = HIGH;
     }
-    digitalWrite(led2, state);
+    digitalWrite(led, state);
     return 0;
 }
 
