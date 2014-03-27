@@ -1,29 +1,35 @@
 About
 =====
 
-Blinking an LED is the “Hello World” example of the microcontroller world. It’s a nice way to warm up and start your journey into the land of embedded hardware. For this example, you will need a Spark Core (duh!), a Breadboard, an LED, a Resistor (we will soon find out a suitable value) and an USB cable. Note, that if you don't have these things, the example will still work, and simply blink the on-board LED instead of the external one.
+Blinking an LED is the "Hello World" example of the microcontroller world. It’s a nice way to warm up and start your journey into the land of embedded hardware. 
 
-[Read more about this project here](http://docs.spark.io/#/examples/blink-an-led) on the Spark Docs site.
+Required Materials
+---
 
+* a LED (optional)
+* a Resistor (optional)
 
-**Items required:**
- - 330 Ohm Resistor 
- - LED of your color choice
- - Tinker App or Cloud IDE
+Note, that if you don't have these two things, the example will still work, and simply blink the on-board LED instead of the external one.
+The value of the resistor doesn't matter much, something around 330 Ohms will work.
 
-**Schematic diagram:**
+Schematic diagram
+---
 
-![Example LED](/images/ex-led.png)
+![Example LED](/led_blink/images/ex-led.png)
 
-**Hands-on Activity:**
+How to Use
+---
 
- In example code:
-      
-  1. Change the `1000` in the `delay(1000)` to `250`
-  2. You will notice that the led blinks faster!
-  3. Try other values but keep it below `2000`
-  4. You can also make it turn on/off longer or shorter be varying the 2 numbers in `delay()`
-      
+There isn't much to this. 1) Flash it, 2) Watch the LED blink, 3) Try the activities below
+
+Activities
+---
+
+### Change the blink rate
+
+- Change the `1000` in the `delay(1000)` to `250`, flash it, watch it blink faster!
+- You can also make it turn on/off longer or shorter be varying the two numbers in `delay()`, watch it blink differently!
+
   eg. Slow blink (Short On, Long Off)
 
 ```
@@ -32,7 +38,9 @@ Blinking an LED is the “Hello World” example of the microcontroller world. I
   digitalWrite(D0,HIGH); //turn on LED
   delay(1000);            //wait for 1s
 ```
-       
- In hardware:  
       
+### Make external LED less bright
+
+In hardware:
+
    1. Change the 330 Ohm resistor to a 1K Ohm. You will notice that the LED becomes much dimmer.
