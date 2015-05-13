@@ -34,14 +34,14 @@ int boardLed = D7; // This is the LED that is already on your device.
 
 int photoresistor = A0; // This is where your photoresistor is plugged in. The other side goes to the "power" pin (below).
 
-int power = A4; // This is the other end of your photoresistor. The other side is plugged into the "photoresistor" pin (above).
+int power = A5; // This is the other end of your photoresistor. The other side is plugged into the "photoresistor" pin (above).
 
 // The following values get set up when your device boots up and calibrates:
 int intactValue; // This is the average value that the photoresistor reads when the beam is intact.
 int brokenValue; // This is the average value that the photoresistor reads when the beam is broken.
 int beamThreshold; // This is a value halfway between ledOnValue and ledOffValue, above which we will assume the led is on and below which we will assume it is off.
 
-bool beamBroken = FALSE; // This flag will be used to mark if we have a new status or now. We will use it in the loop.
+bool beamBroken = false; // This flag will be used to mark if we have a new status or now. We will use it in the loop.
 
 // We start with the setup function.
 
@@ -130,7 +130,7 @@ void loop() {
     and when the beam reconnects it is set to FALSE.
     */
     
-    if (beamBroken==TRUE) {
+    if (beamBroken==true) {
         // If the beam was broken before, then this is a new status.
         // We will send a publish to the cloud and turn the LED on.
         
@@ -142,7 +142,7 @@ void loop() {
         digitalWrite(boardLed,LOW);
         
         // Finally, set the flag to reflect the current status of the beam.
-        beamBroken=FALSE;
+        beamBroken=false;
     }
     else {
         // Otherwise, this isn't a new status, and we don't have to do anything.
@@ -151,7 +151,7 @@ void loop() {
 
   else {
       // If you are below the threshold, the beam is probably broken.
-      if (beamBroken==FALSE) {
+      if (beamBroken==false) {
         
         // Send a publish...
         Spark.publish("beamStatus","broken",60,PRIVATE);
@@ -161,7 +161,7 @@ void loop() {
         digitalWrite(boardLed,LOW);
         
         // Finally, set the flag to reflect the current status of the beam.
-        beamBroken=TRUE;
+        beamBroken=true;
       }
       else {
           // Otherwise, this isn't a new status, and we don't have to do anything.

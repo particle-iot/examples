@@ -34,13 +34,13 @@ You and your buddy will both publish an event, and listen for each others events
 int led = D0;
 int boardLed = D7;
 int photoresistor = A0;
-int power = A4;
+int power = A5;
 
 int intactValue;
 int brokenValue;
 int beamThreshold;
 
-bool beamBroken = FALSE;
+bool beamBroken = false;
 
 
 void setup() {
@@ -109,22 +109,22 @@ void setup() {
 void loop() {
   // This loop sends a publish when the beam is broken.
   if (analogRead(photoresistor)>beamThreshold) {
-    if (beamBroken==TRUE) {
+    if (beamBroken==true) {
         Spark.publish("your_unique_event_name","intact");
         // publish this public event
         // rename your_unique_event_name with your actual unique event name. No spaces, 63 ASCII characters.
         // give your event name to your buddy and have them put it in their app.
         
         // Set the flag to reflect the current status of the beam.
-        beamBroken=FALSE;
+        beamBroken=false;
     }
   }
 
   else {
-      if (beamBroken==FALSE) {
+      if (beamBroken==false) {
         // Same deal as before...
         Spark.publish("your_unique_event_name","broken");
-        beamBroken=TRUE;
+        beamBroken=true;
       }
   }
 }
