@@ -1,5 +1,6 @@
 About
 =====
+This is me trying to learn this stuff!
 
 Blinking an LED is the "Hello World" example of the microcontroller world. It’s a nice way to warm up and start your journey into the land of embedded hardware. 
 
