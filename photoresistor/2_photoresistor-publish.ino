@@ -22,6 +22,9 @@ The D7 LED will then blink three times to let you know calibration is finished.
 
 If you mess up, don't worry-- you can just hit "reset" on your device and do it again!
 
+Once you have flashed this firmware to your device, check out http://dashboard.particle.io
+to see your events being published in real time!
+
 Ready to start?
 ---------------------------------------*/
 
@@ -146,6 +149,13 @@ void loop() {
         
         // Send a publish to your devices...
         Spark.publish("beamStatus","intact",60,PRIVATE);
+		
+		// In this case, the name of your event is "beamStatus"
+		// The information your event is carrying is "intact"
+		// The event is a private event (only your devices and your dashboard can pick up on it)
+		
+		// You will be able to see the results of your publish on your dashboard at dashboard.particle.io
+		
         // And flash the on-board LED on and off.
         digitalWrite(boardLed,HIGH);
         delay(500);
