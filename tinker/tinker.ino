@@ -1,5 +1,6 @@
 // TINKER FIRMWARE
-// This firmware can be included in your code, or it can be re-flashed to your device
+// This firmware can be copied out and included in your code
+// You can also just hit "flash" if you need to get Tinker back on your device (remember to select the correct device from the Devices drawer in the lower left corner)
 
 int tinkerDigitalRead(String pin);
 int tinkerDigitalWrite(String command);
@@ -12,7 +13,7 @@ void setup()
 {
 	// Here we will register the Spark.functions that we can call from the command line or from tinker
 	// Example of calling from command line is:
-	//		spark call [core name here] digitalwrite D7,HIGH
+	//		spark call [device name here] digitalwrite D7,HIGH
     Spark.function("digitalread", tinkerDigitalRead);
     Spark.function("digitalwrite", tinkerDigitalWrite);
     Spark.function("analogread", tinkerAnalogRead);

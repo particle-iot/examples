@@ -58,6 +58,41 @@ void setup() {
   // myHandler() is declared later in this app.
 
   // Calibrate:
+// Just like before, we're going to start by declaring which pins everything is plugged into.
+
+int led = D0; // This is where your LED is plugged in. The other side goes to a resistor connected to GND.
+int boardLed = D7; // This is the LED that is already on your device.
+// On the Core, it's the LED in the upper right hand corner.
+// On the Photon, it's next to the D7 pin.
+
+int photoresistor = A0; // This is where your photoresistor is plugged in. The other side goes to the "power" pin (below).
+
+int power = A5; // This is the other end of your photoresistor. The other side is plugged into the "photoresistor" pin (above).
+
+// The following values get set up when your device boots up and calibrates:
+int intactValue; // This is the average value that the photoresistor reads when the beam is intact.
+int brokenValue; // This is the average value that the photoresistor reads when the beam is broken.
+int beamThreshold; // This is a value halfway between ledOnValue and ledOffValue, above which we will assume the led is on and below which we will assume it is off.
+
+bool beamBroken = false; // This flag will be used to mark if we have a new status or now. We will use it in the loop.
+
+// We start with the setup function.
+
+void setup() {
+  // This part is mostly the same:
+  pinMode(led,OUTPUT); // Our LED pin is output (lighting up the LED)
+  pinMode(boardLed,OUTPUT); // Our on-board LED is output as well
+  pinMode(photoresistor,INPUT);  // Our photoresistor pin is input (reading the photoresistor)
+  pinMode(power,OUTPUT); // The pin powering the photoresistor is output (sending out consistent power)
+
+  // Next, write the power of the photoresistor to be the maximum possible, which is 4095 in analog.
+  analogWrite(power,4095);
+
+  // Since everyone sets up their leds differently, we are also going to start by calibrating our photoresistor.
+  // This one is going to require some input from the user!
+  
+  // Calibrate:
+  // First, the D7 LED will go on to tell you to put your hand in front of the beam.
   digitalWrite(boardLed,HIGH);
   delay(2000);
   
@@ -70,7 +105,17 @@ void setup() {
   int on_1 = analogRead(photoresistor); // read photoresistor
   delay(200); // wait 200 milliseconds
   int on_2 = analogRead(photoresistor); // read photoresistor
-  delay(1000); // wait 1 second
+  delay(300); // wait 300 milliseconds
+  
+  // Now flash to let us know that you've taken the readings...
+  digitalWrite(boardLed,HIGH);
+  delay(100);
+  digitalWrite(boardLed,LOW);
+  delay(100);
+  digitalWrite(boardLed,HIGH);
+  delay(100);
+  digitalWrite(boardLed,LOW);
+  delay(100);
   
   // Now the D7 LED will go on to tell you to remove your hand...
   digitalWrite(boardLed,HIGH);
@@ -83,7 +128,7 @@ void setup() {
   int off_1 = analogRead(photoresistor); // read photoresistor
   delay(200); // wait 200 milliseconds
   int off_2 = analogRead(photoresistor); // read photoresistor
-  delay(300); // wait 300 milliseconds
+  delay(1000); // wait 1 second
 
   // Now flash the D7 LED on and off three times to let us know that we're ready to go!
   digitalWrite(boardLed,HIGH);
@@ -97,7 +142,6 @@ void setup() {
   digitalWrite(boardLed,HIGH);
   delay(100);
   digitalWrite(boardLed,LOW);
-  
 
   intactValue = (on_1+on_2)/2;
   brokenValue = (off_1+off_2)/2;

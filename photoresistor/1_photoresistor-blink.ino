@@ -13,7 +13,7 @@ Ready to start?
 
 // We're going to start by declaring which pins everything is plugged into.
 
-int led = D0; // This is where your LED is plugged in. The other side goes to a resistor connected to GND.
+int led = D0; // This is where the long pin of your LED is plugged in. The other side goes to a resistor connected to GND.
 
 int photoresistor = A0; // This is where your photoresistor is plugged in. The other side goes to the "power" pin (below).
 
@@ -106,5 +106,26 @@ void loop() {
   
 }
 
+/* Paste the code between the dashes below into a .txt file and save it as an .html file. Replace your-device-ID-goes-here with your actual device ID and your-access-token-goes-here with your actual access token.
 
+---------------------------
+<!-- Replace your-device-ID-goes-here with your actual device ID
+and replace your-access-token-goes-here with your actual access token-->
+<center>
+<br>
+<br>
+<br>
+<form action="https://api.spark.io/v1/devices/your-device-ID-goes-here/led?access_token=your-access-token-goes-here" method="POST">
+Tell your device what to do!<br>
+<br>
+<input type="radio" name="args" value="on">Turn the LED on.
+<br>
+<input type="radio" name="args" value="off">Turn the LED off.
+<br>
+<br>
+<input type="submit" value="Do it!">
+</form>
+</center>
+---------------------------
+*/
 

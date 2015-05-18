@@ -73,6 +73,16 @@ void setup() {
   int on_2 = analogRead(photoresistor); // read photoresistor
   delay(300); // wait 300 milliseconds
   
+  // Now flash to let us know that you've taken the readings...
+  digitalWrite(boardLed,HIGH);
+  delay(100);
+  digitalWrite(boardLed,LOW);
+  delay(100);
+  digitalWrite(boardLed,HIGH);
+  delay(100);
+  digitalWrite(boardLed,LOW);
+  delay(100);
+  
   // Now the D7 LED will go on to tell you to remove your hand...
   digitalWrite(boardLed,HIGH);
   delay(2000);
