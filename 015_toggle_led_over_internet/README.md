@@ -13,7 +13,7 @@ also use the Postman browser extension.
 
 A HTTP Get request like follows:
 
-    curl 'https://api.spark.io/v1/devices/DEVICE_ID_OR_NAME?access_token=1234512312sdfefdf'
+    curl 'https://api.particle.io/v1/devices/DEVICE_ID_OR_NAME?access_token=1234512312sdfefdf'
 
 You should see something like this:
 
@@ -29,7 +29,7 @@ You should see something like this:
 
 Call the function and toggle the LED like this:
 
-    curl https://staging-api.spark.io/v1/devices/DEVICE_ID_OR_NAME/toggle_led -d 'access_token=123412341234234fdfeff'
+    curl https://api.particle.io/v1/devices/DEVICE_ID_OR_NAME/toggle_led -d 'access_token=123412341234234fdfeff'
 
 You should see the LED turn on or off on the core, and the curl command should return something like this:
 
@@ -41,4 +41,3 @@ You should see the LED turn on or off on the core, and the curl command should r
       "return_value": 1
     }
 
-This example originated from a conversation at [MakerLand](makerland.org) hackathon and came into this code via this [pull request](https://github.com/spark/examples/pull/1). Thanks for sharing!
