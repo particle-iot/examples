@@ -1,5 +1,0 @@
-{
-  "type": "app_example",
-  "name": "Read TMP36 analogue temperature sensor",
-  "description": "http://docs.spark.io/#/examples/measuring-the-temperature"
-}

@@ -1,3 +1,4 @@
+// An example that illustrates how to trigger a relay switch over the Internet using the relay shield https://store.particle.io/?product=relay-shield
 int RELAY1 = D0;
 int RELAY2 = D1;
 int RELAY3 = D2;

@@ -19,7 +19,7 @@ int toggle_led(String args) {
 }
 
 // The magic here is the Spark.function usage, it's what makes an HTTP POST request
-// to `https://api.spark.io/v1/devices/DEVICE_ID/toggle_led` call the toggle_led firmware function.
+// to `https://api.particle.io/v1/devices/DEVICE_ID/toggle_led` call the toggle_led firmware function.
 // Check out the documentation for more details.
 void setup() {
   pinMode(led, OUTPUT);

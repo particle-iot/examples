@@ -1,0 +1,5 @@
+{
+  "type": "app_example",
+  "name": "Blink an LED",
+  "description": "Blink an LED over the internet"
+}
