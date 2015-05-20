@@ -1,6 +1,8 @@
 Publish and Subscribe with Photoresistors
 ====
 
+![](http://docs.particle.io/assets/images/photon-photoresistor-fritzing.png)
+
 In the last example, we sent a private publish. This publish went to you alone; it was just for you and your own apps, programs, integrations, and devices. We can also send a public publish, though, which allows anyone anywhere to see and subscribe to our event in the cloud. All they need is our event name.
 
 Go find a buddy who has a Core or Photon. Your buddy does not have to be next to you-- he or she can be across the world if you like! All you need is Wi-Fi.
