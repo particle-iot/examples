@@ -1,6 +1,9 @@
 About
 =====
 
+IMPORTANT NOTE: We've moved the official source of truth for firmware app examples available in the [Web IDE](https://build.particle.io) into the [Documentation Site example page](http://docs.particle.io/photon/examples/#annotated-examples)--this makes the examples more useful because they can easily be contextualized with annotations and diagrams within the main docs site. Though examples found here will likely work just fine, going forward, the place to contribute examples firmware code is on the examples page of the docs site.
+
+
 A repo for sharing, refining, and cultivating broadly useful Particle Devicw firmware examples.
 
 This repo is used to populate the example application firmware in the [Web IDE](https://build.particle.io).
