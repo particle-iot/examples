@@ -1,5 +1,6 @@
 Function and Variable with Photoresistors
 ====
+![Wire it like this!](http://docs.particle.io/assets/images/photon-photoresistor-fritzing.png)
 
 This heavily-commented code shows you how to use `Spark.function` to create and register a function with the cloud. By telling the cloud "led on" you will be able to turn the LED on, and by telling it "led off" you can tell it to turn the LED off.
 
